@@ -34,14 +34,21 @@ inline const std::string ReadFileToString(const std::filesystem::path& path)
 	return contents;
 }
 
+/* AOC questions returns two ints */
+struct Result
+{
+	int Part1 = -1;
+	int Part2 = -1;
+};
+
 /* AOC 2024 functions */
 namespace AOC24
 {
-	int Day1(const std::string& contents);
+	Result Day1(const std::string& contents);
 }
 
 /* Map of all of the functions */
-inline std::unordered_map<std::string_view, std::function<int(const std::string&)>> functions =
+inline std::unordered_map<std::string_view, std::function<Result(const std::string&)>> functions =
 {
 	{ "24-01", &AOC24::Day1 }
 };

@@ -37,7 +37,8 @@ int main(int argc, char** argv)
 	/* Calls the correct function */
 	try
 	{
-		std::cout << "Result of [" << day << "]: [" << functions[day](ReadFileToString(data)) << "]\n";
+		const Result res = functions[day](ReadFileToString(data));
+		std::cout << "Result of [" << day << "]: [" << res.Part1 << ", " << res.Part2 << "]\n";
 	}
 
 	/* Catches all errors thrown from program */
