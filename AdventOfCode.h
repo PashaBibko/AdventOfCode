@@ -19,6 +19,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <vector>
 
 /* Util function to read a file to a string */
 inline const std::string ReadFileToString(const std::filesystem::path& path)
