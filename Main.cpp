@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 
 	/* Finds if the current day has been implemented */
 	std::string day = argv[1]; /* Index 0 is reserved for program name */
-	if (functions.contains(day))
+	if (functions.contains(day) == false)
 	{
 		std::cout << "Day {" << day << "} has not been implemented within this program\n";
 
@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 	
 	/* Verifies data file exists */
 	std::filesystem::path data = argv[2];
-	if (std::filesystem::exists(data))
+	if (std::filesystem::exists(data) == false)
 	{
 		std::cout << "Could not find filepath: {" << std::filesystem::absolute(data) << "}";
 
@@ -37,7 +37,7 @@ int main(int argc, char** argv)
 	/* Calls the correct function */
 	try
 	{
-		std::cout << "Result of [" << day << "]" << functions[day]("");
+		std::cout << "Result of [" << day << "]: [" << functions[day](ReadFileToString(data)) << "]\n";
 	}
 
 	/* Catches all errors thrown from program */

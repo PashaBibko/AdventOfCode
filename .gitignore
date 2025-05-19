@@ -6,3 +6,7 @@ x64/
 .vs/
 
 *.user
+
+# Ignores data files as they are not allowed to be shared #
+
+Data/

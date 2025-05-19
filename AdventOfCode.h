@@ -41,7 +41,7 @@ namespace AOC24
 }
 
 /* Map of all of the functions */
-inline std::unordered_map<std::string, std::function<int(const std::string&)>> functions =
+inline std::unordered_map<std::string_view, std::function<int(const std::string&)>> functions =
 {
 	{ "24-01", &AOC24::Day1 }
 };
