@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2024\Day01.cpp" />
+    <ClCompile Include="2024\Day02.cpp" />
     <ClCompile Include="AdventOfCode.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
