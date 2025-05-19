@@ -1,0 +1,8 @@
+# Ignores un-needed VS files and folders #
+
+AdventOfCode/
+
+x64/
+.vs/
+
+*.user
