@@ -47,11 +47,13 @@ namespace AOC24
 {
 	Result Day1(const std::string& contents);
 	Result Day2(const std::string& contents);
+	Result Day3(const std::string& contents);
 }
 
 /* Map of all of the functions */
 inline std::unordered_map<std::string_view, std::function<Result(const std::string&)>> functions =
 {
 	{ "24-01", &AOC24::Day1 },
-	{ "24-02", &AOC24::Day2 }
+	{ "24-02", &AOC24::Day2 },
+	{ "24-03", &AOC24::Day3 }
 };
