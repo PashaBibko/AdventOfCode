@@ -35,22 +35,8 @@ int main(int argc, char** argv)
 	}
 
 	/* Calls the correct function */
-	try
-	{
-		const Result res = functions[day](ReadFileToString(data));
-		std::cout << "Result of [" << day << "]: [" << res.Part1 << ", " << res.Part2 << "]\n";
-	}
-
-	/* Catches all errors thrown from program */
-	catch (...)
-	{
-		/* Throws a breakpoint if there is a debugger */
-		if (IsDebuggerPresent())
-			{ __debugbreak(); }
-
-		/* Else returns early */
-		return -1;
-	}
+	const Result res = functions[day](ReadFileToString(data));
+	std::cout << "Result of [" << day << "]: [" << res.Part1 << ", " << res.Part2 << "]\n";
 
 	return 0;
 }
